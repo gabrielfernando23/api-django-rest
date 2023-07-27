@@ -1,0 +1,40 @@
+# Ignore arquivos e diretórios gerados pelo sistema operacional
+*.pyc
+__pycache__/
+*.sqlite3
+
+# Ignore o arquivo de configuração local das variáveis de ambiente
+.env
+
+# Ignore o diretório de mídia (uploads de arquivos, etc.)
+media/
+
+# Ignore o diretório onde os arquivos estáticos são coletados
+staticfiles/
+
+# Ignore o arquivo de migrações temporárias
+*.bak
+
+# Ignore o diretório virtualenv (caso esteja sendo usado)
+venv/
+env/
+virtualenv/
+.venv/
+
+# Ignore logs e outros arquivos de registro
+*.log
+logs/
+
+# Ignore arquivos de configuração IDE específicos
+.idea/
+.vscode/
+
+# Ignore cache de dependências e pacotes
+*.pyc
+*.pyo
+__pycache__
+dist/
+build/
+*.egg-info/
+.eggs/
+.cache/
