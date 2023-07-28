@@ -30,13 +30,12 @@ class TiposDeTransacaoSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class TransacoesSerializer(serializers.ModelSerializer):
-    # cliente = ClientesSerializer()
 
     class Meta:
         model = Transacao
         fields = '__all__'
 
-    def validate(self, valor):
-        if not valor_eh_valido(valor):
+    def validate(self, data):
+        if valor_eh_valido(data['valor']):
             raise serializers.ValidationError('Valor não pode ser zero ou negativo!')
-        return valor
+        return data
